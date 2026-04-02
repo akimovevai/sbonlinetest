@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>История операций</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Контроль</p>
+          <h1>История операций</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="payments.html">Новый перевод</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="accounts-list">
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Зачисление зарплаты</p>
+            <p class="line-card__meta">02.04.2026 • ООО «Сфера»</p>
+          </div>
+          <strong class="amount-positive">+215 000 ₽</strong>
+          <button class="button button--small" data-message="Квитанция по операции доступна в полной версии сервиса.">Чек</button>
+        </article>
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Оплата ЖКХ</p>
+            <p class="line-card__meta">01.04.2026 • ЕИРЦ</p>
+          </div>
+          <strong class="amount-negative">-8 460 ₽</strong>
+          <button class="button button--small" data-message="Платёж успешно проведён.">Статус</button>
+        </article>
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Перевод между счетами</p>
+            <p class="line-card__meta">31.03.2026 • На накопительный счёт</p>
+          </div>
+          <strong class="amount-negative">-40 000 ₽</strong>
+          <a class="button button--small" href="savings.html">Открыть</a>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
