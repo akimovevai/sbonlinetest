@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страхование</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Защита</p>
+          <h1>Страхование</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="support.html">Сообщить о случае</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="accounts-list">
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Страхование квартиры</p>
+            <p class="line-card__meta">Полис активен до 14.11.2026</p>
+          </div>
+          <strong>Активен</strong>
+          <button class="button button--small" data-message="Электронный полис доступен как демонстрационная карточка.">Полис</button>
+        </article>
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Защита карты</p>
+            <p class="line-card__meta">Компенсация при мошеннических списаниях</p>
+          </div>
+          <strong>Подключено</strong>
+          <button class="button button--small" data-message="Отключение полиса не выполняется без серверной части.">Управлять</button>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
