@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой банк</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru</div>
+            <span class="browser-menu">⋮</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Мои финансы</h2>
+                  <p>Сервисы для полезных привычек</p>
+                </div>
+                <button class="icon-link" data-message="Раздел финансов открыт.">◫</button>
+              </div>
+            </section>
+
+            <section class="finance-group">
+              <div class="finance-group__title">
+                <span>Кошелёк</span>
+                <button class="icon-plus" data-message="Добавление карты доступно в полной версии.">+</button>
+              </div>
+
+              <a class="finance-item" href="accounts.html">
+                <div class="finance-item__icon finance-item__icon--card"></div>
+                <div class="finance-item__info">
+                  <strong>2 457 ₽</strong>
+                  <p>MasterCard •• 1234</p>
+                </div>
+              </a>
+
+              <a class="finance-item" href="accounts.html">
+                <div class="finance-item__icon finance-item__icon--card-alt"></div>
+                <div class="finance-item__info">
+                  <strong>2 457 ₽</strong>
+                  <p>MasterCard •• 1234</p>
+                </div>
+              </a>
+            </section>
+
+            <section class="finance-group">
+              <div class="finance-group__title">
+                <span>Вклады и счета</span>
+                <button class="icon-plus" data-message="Открытие нового счёта доступно после авторизации.">+</button>
+              </div>
+
+              <a class="finance-item finance-item--split" href="savings.html">
+                <div class="finance-item__icon finance-item__icon--account"></div>
+                <div class="finance-item__info">
+                  <strong>20 500 ₽</strong>
+                  <p>СберВклад Прайм •• 8567</p>
+                </div>
+                <span class="finance-item__rate">3,5 %</span>
+              </a>
+
+              <a class="finance-item finance-item--split" href="savings.html">
+                <div class="finance-item__icon finance-item__icon--account"></div>
+                <div class="finance-item__info">
+                  <strong>20 500 ₽</strong>
+                  <p>Накопительный счёт •• 1234</p>
+                </div>
+                <span class="finance-item__rate">3,5 %</span>
+              </a>
+            </section>
+
+            <section class="finance-group">
+              <div class="finance-group__title">
+                <span>Металлические счета</span>
+                <button class="icon-plus" data-message="Металлический счёт можно открыть позже.">+</button>
+              </div>
+
+              <a class="finance-item finance-item--split" href="investments.html">
+                <div class="finance-item__icon finance-item__icon--metal"></div>
+                <div class="finance-item__info">
+                  <strong>25 500 ₽</strong>
+                  <p>Золото •• 9917</p>
+                </div>
+                <span class="finance-item__rate">10 г</span>
+              </a>
+            </section>
+
+            <section class="finance-group">
+              <div class="finance-group__title">
+                <span>Кредиты</span>
+                <button class="icon-plus" data-message="Новый кредит оформляется на отдельной странице.">+</button>
+              </div>
+
+              <a class="finance-item finance-item--split" href="loans.html">
+                <div class="finance-item__icon finance-item__icon--loan"></div>
+                <div class="finance-item__info">
+                  <strong>Потреб. кредит</strong>
+                  <p>Очеред. платёж 20.10.2026</p>
+                </div>
+                <span class="finance-item__rate">300 000 ₽</span>
+              </a>
+            </section>
+          </aside>
+
+          <section class="dashboard">
+            <div class="quick-actions">
+              <div class="quick-actions__rail">
+                <button class="square-action" data-message="Открыты все сервисы.">▣</button>
+                <button class="square-action" data-message="Добавление действия пока работает как демо.">⊕</button>
+              </div>
+
+              <div class="service-tiles">
+                <a class="service-tile" href="payments.html">
+                  <div class="service-tile__icon service-tile__icon--green">🧾</div>
+                  <strong>Платежи</strong>
+                  <span>Оплатить</span>
+                </a>
+                <a class="service-tile" href="payments.html">
+                  <div class="service-tile__icon service-tile__icon--green">➜</div>
+                  <strong>Переводы</strong>
+                  <span>Перевести</span>
+                </a>
+                <button class="service-tile service-tile--button" data-message="Оплата мобильной связи пока не подключена.">
+                  <div class="service-tile__icon service-tile__icon--red">O</div>
+                  <strong>МТС</strong>
+                  <span>Оплатить</span>
+                </button>
+                <a class="service-tile" href="loans.html">
+                  <div class="service-tile__icon service-tile__icon--yellow">◌</div>
+                  <strong>Кредит</strong>
+                  <span>Оплатить</span>
+                </a>
+                <a class="service-tile" href="payments.html">
+                  <div class="service-tile__icon service-tile__icon--avatar">В</div>
+                  <strong>Василиса</strong>
+                  <span>Перевести</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="shortcut-row">
+              <button class="text-shortcut" data-message="Автоплатежи открываются в разделе профиля.">Автоплатежи и автопереводы</button>
+              <button class="text-shortcut" data-message="Шаблоны доступны в разделе переводов.">Шаблоны</button>
+            </div>
+
+            <div class="content-grid">
+              <section class="promo-block">
+                <div class="promo-banner">
+                  <div class="promo-banner__copy">
+                    <h3>Накопите на отпуск вашей мечты</h3>
+                    <p>Откладывайте деньги онлайн с сервисом целей</p>
+                    <a class="promo-link" href="savings.html">Подробнее</a>
+                  </div>
+                  <div class="promo-figure">
+                    <div class="promo-figure__circle"></div>
+                    <div class="promo-figure__person"></div>
+                  </div>
+                </div>
+                <div class="promo-dots">
+                  <span class="promo-dots__active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="operations">
+                  <div class="operations__head">
+                    <h3>Последние операции</h3>
+                    <a href="history.html">Показать всю историю</a>
+                  </div>
+
+                  <div class="operations__tabs">
+                    <button class="operations__tab operations__tab--active" data-message="Показаны все операции.">Все</button>
+                    <button class="operations__tab" data-message="Фильтр СберБанк Онлайн применяется в полной версии.">СберБанк Онлайн</button>
+                    <button class="operations__tab" data-message="Фильтр товаров и услуг пока демонстрационный.">Товары и услуги</button>
+                    <button class="operations__tab" data-message="Фильтр наличных пока демонстрационный.">Наличные</button>
+                  </div>
+
+                  <p class="operations__date">Сегодня</p>
+
+                  <a class="operation-row" href="history.html">
+                    <div class="operation-row__icon">📚</div>
+                    <div class="operation-row__info">
+                      <strong>Литрес</strong>
+                      <p>Оплата товаров и услуг</p>
+                    </div>
+                    <span>2 300 ₽</span>
+                  </a>
+
+                  <a class="operation-row" href="history.html">
+                    <div class="operation-row__icon operation-row__icon--green">↗</div>
+                    <div class="operation-row__info">
+                      <strong>Перевод между счетами</strong>
+                      <p>На накопительный счёт</p>
+                    </div>
+                    <span>40 000 ₽</span>
+                  </a>
+                </div>
+              </section>
+
+              <aside class="insights">
+                <div class="insights-card">
+                  <h3>Финансы и бюджет</h3>
+                  <a class="insight-link" href="profile.html">Анализ финансов</a>
+
+                  <div class="insight-period">
+                    <button data-message="Предыдущий месяц пока не переключается.">←</button>
+                    <span>Декабрь 2026</span>
+                    <button data-message="Следующий месяц пока не переключается.">→</button>
+                  </div>
+
+                  <div class="budget-row">
+                    <div>
+                      <span>Расходы</span>
+                      <strong>47 459 ₽</strong>
+                    </div>
+                    <div>
+                      <span>Доходы</span>
+                      <strong>52 000 ₽</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <nav class="category-list">
+                  <a class="category-item" href="payments.html">
+                    <span class="category-item__icon">🗓</span>
+                    <span>Перевод между своими счетами</span>
+                  </a>
+                  <a class="category-item" href="payments.html">
+                    <span class="category-item__icon">🧺</span>
+                    <span>Супермаркеты</span>
+                  </a>
+                  <a class="category-item" href="insurance.html">
+                    <span class="category-item__icon">🚗</span>
+                    <span>Автомобиль</span>
+                  </a>
+                  <a class="category-item" href="offers.html">
+                    <span class="category-item__icon">🏠</span>
+                    <span>Всё для дома</span>
+                  </a>
+                </nav>
+              </aside>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
