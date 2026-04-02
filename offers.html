@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Предложения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Витрина</p>
+          <h1>Персональные предложения</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="loans.html">Кредиты</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="quick-grid">
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Кредит</span>
+          <h4>До 1 500 000 ₽</h4>
+          <p>Предодобренный лимит и сниженная ставка для зарплатного клиента.</p>
+          <button class="button button--small" data-message="Заявка отправляется только в полноценной банковской системе.">Подать заявку</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Кешбэк</span>
+          <h4>Категории месяца</h4>
+          <p>Повышенный возврат за супермаркеты, такси и путешествия.</p>
+          <button class="button button--small" data-message="Категории сохранены в интерфейсе.">Подключить</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Инвестиции</span>
+          <h4>Готовый портфель</h4>
+          <p>Подборка консервативных инструментов с низкой волатильностью.</p>
+          <a class="button button--small" href="investments.html">Перейти</a>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
