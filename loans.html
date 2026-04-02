@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кредиты и ипотека</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Обязательства</p>
+          <h1>Кредиты и ипотека</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="offers.html">Новые предложения</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="accounts-list">
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Потребительский кредит</p>
+            <p class="line-card__meta">Платёж 18 апреля • ставка 11.9%</p>
+          </div>
+          <strong>12 430 ₽</strong>
+          <button class="button button--small" data-message="Заявка на досрочное погашение недоступна в статической сборке.">Погасить</button>
+        </article>
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Ипотека</p>
+            <p class="line-card__meta">Остаток 4 820 000 ₽ • до 2041 года</p>
+          </div>
+          <strong>38 100 ₽</strong>
+          <button class="button button--small" data-message="График платежей отображается как демонстрационный.">График</button>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
