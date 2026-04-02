@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Поддержка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Помощь</p>
+          <h1>Поддержка и безопасность</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="profile.html">Настройки</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="quick-grid">
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Чат</span>
+          <h4>Написать в поддержку</h4>
+          <p>Операторы, статусы обращений, вложения и справочные ответы.</p>
+          <button class="button button--small" data-message="Чат поддержки работает как статический сценарий.">Написать</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Безопасность</span>
+          <h4>Сообщить о проблеме</h4>
+          <p>Блокировка карты, подозрительная операция, смена устройства и входы в аккаунт.</p>
+          <button class="button button--small" data-message="Заявка на блокировку не выполняется без интеграции.">Сообщить</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">FAQ</span>
+          <h4>Частые вопросы</h4>
+          <p>Переводы, кредиты, страховки, лимиты и настройки уведомлений.</p>
+          <button class="button button--small" data-message="База знаний в этой версии представлена как навигационный блок.">Открыть</button>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
