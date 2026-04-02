@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Платежи и переводы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Операции</p>
+          <h1>Платежи и переводы</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="history.html">История</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="quick-grid">
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Переводы</span>
+          <h4>Между своими счетами</h4>
+          <p>С карты на вклад, между рублёвым и валютным счётом, в инвесткопилку.</p>
+          <button class="button button--small" data-message="Внутренний перевод подготовлен, но не выполняется без бэкенда.">Перевести</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">СБП</span>
+          <h4>По номеру телефона</h4>
+          <p>Перевод клиентам других банков, шаблоны получателей и лимиты.</p>
+          <button class="button button--small" data-message="Перевод по номеру телефона доступен как демонстрационный сценарий.">Отправить</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Платежи</span>
+          <h4>ЖКХ и связь</h4>
+          <p>Коммунальные услуги, интернет, мобильная связь и налоги.</p>
+          <button class="button button--small" data-message="Провайдеры не подключены в текущей статической версии.">Оплатить</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Автоплатежи</span>
+          <h4>Регулярные списания</h4>
+          <p>Настройка платежей по расписанию и контроль подписок.</p>
+          <a class="button button--small" href="profile.html">Настроить</a>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
