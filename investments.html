@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инвестиции</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Рынок</p>
+          <h1>Инвестиции</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="offers.html">Идеи</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="quick-grid">
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Портфель</span>
+          <h4>382 000 ₽</h4>
+          <p>Облигации федерального займа, ETF и дивидендные бумаги.</p>
+          <button class="button button--small" data-message="Сделки не исполняются в статической витрине.">Купить</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Доходность</span>
+          <h4>+12.4% за год</h4>
+          <p>Аналитика по активам, диаграмма структуры и текущий результат.</p>
+          <button class="button button--small" data-message="Отчёт инвестора доступен только как макет интерфейса.">Отчёт</button>
+        </article>
+        <article class="quick-card quick-card--static">
+          <span class="section-label">Подборки</span>
+          <h4>Готовые стратегии</h4>
+          <p>Консервативная, сбалансированная и валютная стратегия.</p>
+          <a class="button button--small" href="offers.html">Смотреть</a>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
