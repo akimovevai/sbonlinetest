@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Счета и карты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="accounts-page">
+    <main class="accounts-layout">
+      <header class="accounts-header">
+        <div>
+          <p class="topbar__eyebrow">Счета клиента</p>
+          <h1>Счета и карты</h1>
+        </div>
+        <div class="topbar__actions">
+          <a class="button" href="payments.html">Перевести</a>
+          <a class="button button--accent" href="index.html">На главную</a>
+        </div>
+      </header>
+
+      <section class="accounts-list">
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Зарплатная карта</p>
+            <p class="line-card__meta">Visa Classic •••• 4582</p>
+          </div>
+          <strong>184 250 ₽</strong>
+          <button class="button button--small" data-message="Операции по карте доступны в истории операций.">Операции</button>
+        </article>
+
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Накопительный счёт</p>
+            <p class="line-card__meta">Ставка 6.8% годовых</p>
+          </div>
+          <strong>1 920 000 ₽</strong>
+          <a class="button button--small" href="savings.html">История</a>
+        </article>
+
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Валютный счёт</p>
+            <p class="line-card__meta">USD Account • 992041</p>
+          </div>
+          <strong>$4 180</strong>
+          <button class="button button--small" data-message="Обмен валюты не подключён к бэкенду в демо.">Обмен</button>
+        </article>
+
+        <article class="line-card">
+          <div>
+            <p class="line-card__title">Вклад «Надёжный»</p>
+            <p class="line-card__meta">Открыт до 12.12.2026</p>
+          </div>
+          <strong>378 100 ₽</strong>
+          <a class="button button--small" href="savings.html">Продлить</a>
+        </article>
+      </section>
+
+      <section class="inner-grid">
+        <article class="mini-panel">
+          <p class="section-label">Карты</p>
+          <h3>Быстрые действия</h3>
+          <p>Изменить лимиты, заказать перевыпуск, посмотреть реквизиты, скрыть карту из списка.</p>
+        </article>
+        <article class="mini-panel">
+          <p class="section-label">Шаблоны</p>
+          <h3>Частые переводы</h3>
+          <p>Перевод себе, перевод по СБП, пополнение вклада и оплата мобильной связи.</p>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
