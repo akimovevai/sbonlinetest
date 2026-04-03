@@ -12,36 +12,83 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Защита</p>
-          <h1>Страхование</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/insurance</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="support.html">Сообщить о случае</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="accounts-list">
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Страхование квартиры</p>
-            <p class="line-card__meta">Полис активен до 14.11.2026</p>
-          </div>
-          <strong>Активен</strong>
-          <button class="button button--small" data-message="Электронный полис доступен как демонстрационная карточка.">Полис</button>
-        </article>
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Защита карты</p>
-            <p class="line-card__meta">Компенсация при мошеннических списаниях</p>
-          </div>
-          <strong>Подключено</strong>
-          <button class="button button--small" data-message="Отключение полиса не выполняется без серверной части.">Управлять</button>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Защита</h2>
+                  <p>Полисы и обращения</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link sidebar-link--active" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Защита</p>
+                <h1>Страхование</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="support.html">Сообщить о случае</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <section class="section-list section-list--full">
+              <h3>Активные полисы</h3>
+              <article class="section-line">
+                <div>
+                  <strong>Страхование квартиры</strong>
+                  <p>Полис активен до 14.11.2026</p>
+                </div>
+                <button class="button button--small" data-message="Электронный полис доступен как демонстрационная карточка.">Полис</button>
+              </article>
+              <article class="section-line">
+                <div>
+                  <strong>Защита карты</strong>
+                  <p>Компенсация при мошеннических списаниях</p>
+                </div>
+                <button class="button button--small" data-message="Отключение полиса не выполняется без серверной части.">Управлять</button>
+              </article>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 

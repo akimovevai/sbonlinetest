@@ -12,44 +12,103 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Контроль</p>
-          <h1>История операций</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/history</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="payments.html">Новый перевод</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="accounts-list">
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Зачисление зарплаты</p>
-            <p class="line-card__meta">02.04.2026 • ООО «Сфера»</p>
-          </div>
-          <strong class="amount-positive">+215 000 ₽</strong>
-          <button class="button button--small" data-message="Квитанция по операции доступна в полной версии сервиса.">Чек</button>
-        </article>
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Оплата ЖКХ</p>
-            <p class="line-card__meta">01.04.2026 • ЕИРЦ</p>
-          </div>
-          <strong class="amount-negative">-8 460 ₽</strong>
-          <button class="button button--small" data-message="Платёж успешно проведён.">Статус</button>
-        </article>
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Перевод между счетами</p>
-            <p class="line-card__meta">31.03.2026 • На накопительный счёт</p>
-          </div>
-          <strong class="amount-negative">-40 000 ₽</strong>
-          <a class="button button--small" href="savings.html">Открыть</a>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>История</h2>
+                  <p>Все поступления и списания</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link sidebar-link--active" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Контроль</p>
+                <h1>История операций</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="payments.html">Новый перевод</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <div class="section-tabs">
+              <a class="section-tab section-tab--active" href="history.html">Все операции</a>
+              <a class="section-tab" href="payments.html">Платежи</a>
+              <a class="section-tab" href="accounts.html">Счета</a>
+            </div>
+
+            <section class="section-list section-list--full">
+              <h3>Сегодня</h3>
+              <article class="section-line">
+                <div>
+                  <strong>Зачисление зарплаты</strong>
+                  <p>02.04.2026 • ООО «Сфера»</p>
+                </div>
+                <span class="amount-positive">+215 000 ₽</span>
+              </article>
+              <article class="section-line">
+                <div>
+                  <strong>Оплата ЖКХ</strong>
+                  <p>01.04.2026 • ЕИРЦ</p>
+                </div>
+                <span class="amount-negative">-8 460 ₽</span>
+              </article>
+              <article class="section-line">
+                <div>
+                  <strong>Перевод между счетами</strong>
+                  <p>31.03.2026 • На накопительный счёт</p>
+                </div>
+                <span class="amount-negative">-40 000 ₽</span>
+              </article>
+              <article class="section-line">
+                <div>
+                  <strong>Литрес</strong>
+                  <p>30.03.2026 • Оплата товаров и услуг</p>
+                </div>
+                <span class="amount-negative">-2 300 ₽</span>
+              </article>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 

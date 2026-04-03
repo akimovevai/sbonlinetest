@@ -12,38 +12,86 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Витрина</p>
-          <h1>Персональные предложения</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/offers</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="loans.html">Кредиты</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="quick-grid">
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Кредит</span>
-          <h4>До 1 500 000 ₽</h4>
-          <p>Предодобренный лимит и сниженная ставка для зарплатного клиента.</p>
-          <button class="button button--small" data-message="Заявка отправляется только в полноценной банковской системе.">Подать заявку</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Кешбэк</span>
-          <h4>Категории месяца</h4>
-          <p>Повышенный возврат за супермаркеты, такси и путешествия.</p>
-          <button class="button button--small" data-message="Категории сохранены в интерфейсе.">Подключить</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Инвестиции</span>
-          <h4>Готовый портфель</h4>
-          <p>Подборка консервативных инструментов с низкой волатильностью.</p>
-          <a class="button button--small" href="investments.html">Перейти</a>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Предложения</h2>
+                  <p>Персональные продукты</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link sidebar-link--active" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Витрина</p>
+                <h1>Персональные предложения</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="loans.html">Кредиты</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <section class="section-card-grid">
+              <article class="section-card section-card--soft">
+                <span class="section-label">Кредит</span>
+                <h3>До 1 500 000 ₽</h3>
+                <p>Предодобренный лимит и сниженная ставка для зарплатного клиента.</p>
+                <button class="button button--small" data-message="Заявка отправляется только в полноценной банковской системе.">Подать заявку</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Кешбэк</span>
+                <h3>Категории месяца</h3>
+                <p>Повышенный возврат за супермаркеты, такси и путешествия.</p>
+                <button class="button button--small" data-message="Категории сохранены в интерфейсе.">Подключить</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Инвестиции</span>
+                <h3>Готовый портфель</h3>
+                <p>Подборка консервативных инструментов с низкой волатильностью.</p>
+                <a class="button button--small" href="investments.html">Перейти</a>
+              </article>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 

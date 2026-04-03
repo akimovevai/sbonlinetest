@@ -12,36 +12,83 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Обязательства</p>
-          <h1>Кредиты и ипотека</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/loans</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="offers.html">Новые предложения</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="accounts-list">
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Потребительский кредит</p>
-            <p class="line-card__meta">Платёж 18 апреля • ставка 11.9%</p>
-          </div>
-          <strong>12 430 ₽</strong>
-          <button class="button button--small" data-message="Заявка на досрочное погашение недоступна в статической сборке.">Погасить</button>
-        </article>
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Ипотека</p>
-            <p class="line-card__meta">Остаток 4 820 000 ₽ • до 2041 года</p>
-          </div>
-          <strong>38 100 ₽</strong>
-          <button class="button button--small" data-message="График платежей отображается как демонстрационный.">График</button>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Кредиты</h2>
+                  <p>График и платежи</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link sidebar-link--active" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Обязательства</p>
+                <h1>Кредиты и ипотека</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="offers.html">Новые предложения</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <section class="section-list section-list--full">
+              <h3>Активные продукты</h3>
+              <article class="section-line">
+                <div>
+                  <strong>Потребительский кредит</strong>
+                  <p>Платёж 18 апреля • ставка 11.9%</p>
+                </div>
+                <button class="button button--small" data-message="Заявка на досрочное погашение недоступна в статической сборке.">Погасить</button>
+              </article>
+              <article class="section-line">
+                <div>
+                  <strong>Ипотека</strong>
+                  <p>Остаток 4 820 000 ₽ • до 2041 года</p>
+                </div>
+                <button class="button button--small" data-message="График платежей отображается как демонстрационный.">График</button>
+              </article>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 

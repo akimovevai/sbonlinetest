@@ -12,68 +12,141 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Счета клиента</p>
-          <h1>Счета и карты</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/accounts</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="payments.html">Перевести</a>
-          <a class="button button--accent" href="index.html">На главную</a>
+
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Мои финансы</h2>
+                  <p>Сводка по продуктам клиента</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link sidebar-link--active" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Финансы клиента</p>
+                <h1>Счета и карты</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="payments.html">Перевести</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <div class="section-tabs">
+              <a class="section-tab section-tab--active" href="accounts.html">Все продукты</a>
+              <a class="section-tab" href="history.html">Операции</a>
+              <a class="section-tab" href="savings.html">Накопления</a>
+            </div>
+
+            <section class="section-hero">
+              <div>
+                <p class="section-label">Доступно сейчас</p>
+                <h2>2 486 530 ₽</h2>
+                <p class="section-hero__text">Карты, счета, вклады и валютные остатки собраны в одной ленте.</p>
+              </div>
+              <div class="section-hero__meta">
+                <span>Активных карт: 2</span>
+                <span>Счетов и вкладов: 4</span>
+              </div>
+            </section>
+
+            <section class="section-card-grid">
+              <article class="section-card">
+                <span class="section-label">Карта</span>
+                <h3>Зарплатная Visa</h3>
+                <p>Mastercard/Visa формат карточки, быстрые переводы, лимиты и реквизиты.</p>
+                <strong>184 250 ₽</strong>
+                <button class="button button--small" data-message="Лимиты по карте доступны в полной версии.">Лимиты</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Счёт</span>
+                <h3>Накопительный</h3>
+                <p>Свободное пополнение, начисление процентов раз в месяц.</p>
+                <strong>1 920 000 ₽</strong>
+                <a class="button button--small" href="savings.html">Открыть</a>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Валюта</span>
+                <h3>USD Account</h3>
+                <p>Переводы, обмен и хранение валюты в отдельном продукте.</p>
+                <strong>$4 180</strong>
+                <button class="button button--small" data-message="Курс обмена появится после подключения API.">Курс</button>
+              </article>
+            </section>
+
+            <section class="section-split">
+              <div class="section-list">
+                <h3>Подробный список</h3>
+                <article class="section-line">
+                  <div>
+                    <strong>Visa Classic •••• 4582</strong>
+                    <p>Основная зарплатная карта</p>
+                  </div>
+                  <span>184 250 ₽</span>
+                </article>
+                <article class="section-line">
+                  <div>
+                    <strong>СберВклад Прайм •••• 8567</strong>
+                    <p>Вклад с фиксированной ставкой</p>
+                  </div>
+                  <span>20 500 ₽</span>
+                </article>
+                <article class="section-line">
+                  <div>
+                    <strong>Накопительный счёт •••• 1234</strong>
+                    <p>Свободный доступ к деньгам</p>
+                  </div>
+                  <span>1 920 000 ₽</span>
+                </article>
+              </div>
+
+              <aside class="section-note">
+                <span class="section-label">Быстрые действия</span>
+                <h3>Что можно сделать</h3>
+                <p>Посмотреть реквизиты, изменить лимиты, пополнить счёт, перевести деньги и открыть новый продукт.</p>
+                <a class="button" href="payments.html">К переводам</a>
+              </aside>
+            </section>
+          </section>
         </div>
-      </header>
-
-      <section class="accounts-list">
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Зарплатная карта</p>
-            <p class="line-card__meta">Visa Classic •••• 4582</p>
-          </div>
-          <strong>184 250 ₽</strong>
-          <button class="button button--small" data-message="Операции по карте доступны в истории операций.">Операции</button>
-        </article>
-
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Накопительный счёт</p>
-            <p class="line-card__meta">Ставка 6.8% годовых</p>
-          </div>
-          <strong>1 920 000 ₽</strong>
-          <a class="button button--small" href="savings.html">История</a>
-        </article>
-
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Валютный счёт</p>
-            <p class="line-card__meta">USD Account • 992041</p>
-          </div>
-          <strong>$4 180</strong>
-          <button class="button button--small" data-message="Обмен валюты не подключён к бэкенду в демо.">Обмен</button>
-        </article>
-
-        <article class="line-card">
-          <div>
-            <p class="line-card__title">Вклад «Надёжный»</p>
-            <p class="line-card__meta">Открыт до 12.12.2026</p>
-          </div>
-          <strong>378 100 ₽</strong>
-          <a class="button button--small" href="savings.html">Продлить</a>
-        </article>
-      </section>
-
-      <section class="inner-grid">
-        <article class="mini-panel">
-          <p class="section-label">Карты</p>
-          <h3>Быстрые действия</h3>
-          <p>Изменить лимиты, заказать перевыпуск, посмотреть реквизиты, скрыть карту из списка.</p>
-        </article>
-        <article class="mini-panel">
-          <p class="section-label">Шаблоны</p>
-          <h3>Частые переводы</h3>
-          <p>Перевод себе, перевод по СБП, пополнение вклада и оплата мобильной связи.</p>
-        </article>
       </section>
     </main>
 

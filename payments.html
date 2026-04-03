@@ -12,44 +12,125 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Операции</p>
-          <h1>Платежи и переводы</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/payments</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="history.html">История</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="quick-grid">
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Переводы</span>
-          <h4>Между своими счетами</h4>
-          <p>С карты на вклад, между рублёвым и валютным счётом, в инвесткопилку.</p>
-          <button class="button button--small" data-message="Внутренний перевод подготовлен, но не выполняется без бэкенда.">Перевести</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">СБП</span>
-          <h4>По номеру телефона</h4>
-          <p>Перевод клиентам других банков, шаблоны получателей и лимиты.</p>
-          <button class="button button--small" data-message="Перевод по номеру телефона доступен как демонстрационный сценарий.">Отправить</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Платежи</span>
-          <h4>ЖКХ и связь</h4>
-          <p>Коммунальные услуги, интернет, мобильная связь и налоги.</p>
-          <button class="button button--small" data-message="Провайдеры не подключены в текущей статической версии.">Оплатить</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Автоплатежи</span>
-          <h4>Регулярные списания</h4>
-          <p>Настройка платежей по расписанию и контроль подписок.</p>
-          <a class="button button--small" href="profile.html">Настроить</a>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Платежи</h2>
+                  <p>Частые операции и шаблоны</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link sidebar-link--active" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Операции</p>
+                <h1>Платежи и переводы</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="history.html">История</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <div class="section-tabs">
+              <a class="section-tab section-tab--active" href="payments.html">Все платежи</a>
+              <a class="section-tab" href="history.html">История</a>
+              <a class="section-tab" href="profile.html">Автоплатежи</a>
+            </div>
+
+            <section class="section-card-grid">
+              <article class="section-card section-card--soft">
+                <span class="section-label">Перевод</span>
+                <h3>Между своими счетами</h3>
+                <p>С карты на вклад, между рублёвым и валютным счётом, в инвесткопилку.</p>
+                <button class="button button--small" data-message="Внутренний перевод подготовлен, но не выполняется без бэкенда.">Перевести</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">СБП</span>
+                <h3>По номеру телефона</h3>
+                <p>Быстрый перевод клиентам других банков и сохранённым получателям.</p>
+                <button class="button button--small" data-message="Перевод по номеру телефона доступен как демонстрационный сценарий.">Отправить</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Сервисы</span>
+                <h3>ЖКХ и связь</h3>
+                <p>Коммунальные услуги, интернет, мобильная связь, налоги и штрафы.</p>
+                <button class="button button--small" data-message="Провайдеры не подключены в текущей статической версии.">Оплатить</button>
+              </article>
+            </section>
+
+            <section class="section-split">
+              <div class="section-list">
+                <h3>Шаблоны и регулярные операции</h3>
+                <article class="section-line">
+                  <div>
+                    <strong>Автоплатёж мобильной связи</strong>
+                    <p>Каждое 5 число месяца</p>
+                  </div>
+                  <a class="button button--small" href="profile.html">Изменить</a>
+                </article>
+                <article class="section-line">
+                  <div>
+                    <strong>Перевод на накопительный счёт</strong>
+                    <p>Шаблон пополнения со счёта карты</p>
+                  </div>
+                  <button class="button button--small" data-message="Шаблон сохранён в демонстрационном виде.">Запустить</button>
+                </article>
+                <article class="section-line">
+                  <div>
+                    <strong>Коммунальные платежи</strong>
+                    <p>Повторный платёж по сохранённым реквизитам</p>
+                  </div>
+                  <button class="button button--small" data-message="Реквизиты услуг не подключены.">Открыть</button>
+                </article>
+              </div>
+
+              <aside class="section-note">
+                <span class="section-label">Подсказка</span>
+                <h3>Быстрый сценарий</h3>
+                <p>Платежи, переводы, шаблоны и автосписания теперь оформлены в той же системе карточек, что и главная страница.</p>
+              </aside>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 

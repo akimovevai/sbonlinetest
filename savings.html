@@ -12,38 +12,88 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="accounts-page">
-    <main class="accounts-layout">
-      <header class="accounts-header">
-        <div>
-          <p class="topbar__eyebrow">Сбережения</p>
-          <h1>Вклады и накопления</h1>
+  <body class="sber-body">
+    <main class="sber-stage">
+      <section class="sber-app">
+        <div class="browser-bar">
+          <div class="browser-bar__top">
+            <div class="browser-brand">
+              <span class="browser-brand__logo"></span>
+              <span>СберБанк Онлайн</span>
+            </div>
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+          </div>
+          <div class="browser-bar__search">
+            <span class="browser-nav">←</span>
+            <span class="browser-nav">→</span>
+            <span class="browser-nav">⟳</span>
+            <div class="browser-address">online.sberbank.ru/savings</div>
+            <span class="browser-menu">⋮</span>
+          </div>
         </div>
-        <div class="topbar__actions">
-          <a class="button" href="accounts.html">Счета</a>
-          <a class="button button--accent" href="index.html">На главную</a>
-        </div>
-      </header>
 
-      <section class="quick-grid">
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Накопительный счёт</span>
-          <h4>Свободный доступ</h4>
-          <p>1 920 000 ₽, пополнение и снятие без ограничений, выплата процентов каждый месяц.</p>
-          <button class="button button--small" data-message="Пополнение сохранено как быстрый сценарий.">Пополнить</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Вклад</span>
-          <h4>Надёжный</h4>
-          <p>378 100 ₽ до 12.12.2026, повышенная ставка и капитализация процентов.</p>
-          <button class="button button--small" data-message="Условия вклада показаны в рамках демо-страницы.">Условия</button>
-        </article>
-        <article class="quick-card quick-card--static">
-          <span class="section-label">Финансовые цели</span>
-          <h4>Отпуск и автомобиль</h4>
-          <p>Две активные цели со сроком и прогрессом накопления.</p>
-          <a class="button button--small" href="profile.html">Настроить цель</a>
-        </article>
+        <div class="workspace">
+          <aside class="finance-sidebar">
+            <section class="finance-card">
+              <div class="finance-card__header">
+                <div>
+                  <h2>Накопления</h2>
+                  <p>Вклады, цели и проценты</p>
+                </div>
+                <a class="icon-link" href="index.html">◫</a>
+              </div>
+            </section>
+
+            <nav class="sidebar-links">
+              <a class="sidebar-link" href="accounts.html">Счета и карты</a>
+              <a class="sidebar-link" href="payments.html">Платежи и переводы</a>
+              <a class="sidebar-link" href="history.html">История операций</a>
+              <a class="sidebar-link sidebar-link--active" href="savings.html">Вклады и накопления</a>
+              <a class="sidebar-link" href="loans.html">Кредиты</a>
+              <a class="sidebar-link" href="investments.html">Инвестиции</a>
+              <a class="sidebar-link" href="insurance.html">Страхование</a>
+              <a class="sidebar-link" href="offers.html">Предложения</a>
+              <a class="sidebar-link" href="profile.html">Профиль</a>
+              <a class="sidebar-link" href="support.html">Поддержка</a>
+            </nav>
+          </aside>
+
+          <section class="section-dashboard">
+            <header class="section-header">
+              <div>
+                <p class="topbar__eyebrow">Сбережения</p>
+                <h1>Вклады и накопления</h1>
+              </div>
+              <div class="topbar__actions">
+                <a class="button" href="accounts.html">Счета</a>
+                <a class="button button--accent" href="index.html">На главную</a>
+              </div>
+            </header>
+
+            <section class="section-card-grid">
+              <article class="section-card section-card--soft">
+                <span class="section-label">Накопительный счёт</span>
+                <h3>Свободный доступ</h3>
+                <p>Пополнение и снятие без ограничений, ежемесячная выплата процентов.</p>
+                <strong>1 920 000 ₽</strong>
+                <button class="button button--small" data-message="Пополнение сохранено как быстрый сценарий.">Пополнить</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Вклад</span>
+                <h3>Надёжный</h3>
+                <p>Фиксированный срок, повышенная ставка и капитализация процентов.</p>
+                <strong>378 100 ₽</strong>
+                <button class="button button--small" data-message="Условия вклада показаны в рамках демо-страницы.">Условия</button>
+              </article>
+              <article class="section-card">
+                <span class="section-label">Цели</span>
+                <h3>Отпуск и автомобиль</h3>
+                <p>Две активные цели с прогрессом накопления и графиком пополнений.</p>
+                <a class="button button--small" href="profile.html">Настроить</a>
+              </article>
+            </section>
+          </section>
+        </div>
       </section>
     </main>
 
